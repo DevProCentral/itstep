@@ -7,55 +7,48 @@
 </head>
 
 <body>
-   
-   <header>
-      <img src="images/holiday.png" alt="holiday"> 
-      <a href="#">Home</a>
-      <a href="#">Homework</a>
-      <a href="#">Settings</a>
-      <img src="images/av_64.png" alt="Avatar Small">
-   </header>
-   <p>Settings</p>
-   <div class="columnNames">
-       <p>Avatar</p>
-       <p>Student's Info</p>
-       <p>Change Password</p>
-   </div>
-    <div class="container">
-    <div>
-        <form action="#" method="post">
-            <img src="images/av_256.png" alt="Avatar">
-            <input type="file" id="choose foto" name="choose foto">
-            <label for="choose foto">Choose photo</label>
-        </form>
-        
+    <div class="globalContainer">
+        <header>
+            <img src="images/holiday.png" alt="holiday">
+            <a href="#">Home</a>
+            <a href="#">Homework</a>
+            <a href="#">Settings</a>
+            <img src="images/av_64.png" alt="Avatar Small">
+        </header>
+        <p>Settings</p>
+        <div class="columnNames">
+            <p>Avatar</p>
+            <p>Student's Info</p>
+            <p>Change Password</p>
+        </div>
+        <div class="container">
+            <div>
+                <form action="#" method="post">
+                    <img src="images/av_256.png" alt="Avatar">
+                    <input type="file" id="choose foto" name="choose foto">
+                    <label for="choose foto">Choose photo</label>
+                </form>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <input type="text" name="First name" placeholder="First name" maxlength="20" pattern="[A-Za-z]{} [А-Яа-я]{}" required>
+                    <input type="text" name="Last name" placeholder="Last name" maxlength="20" pattern="[A-Za-z]{} [А-Яа-я]{}" required>
+                    <input type="email" name="Email" placeholder="Email" maxlength="20" pattern="[A-Za-z]{}" required>
+                    <input type="text" name="Phone number" placeholder="Phone number" maxlength="20" pattern="[0-9]{}" required>
+                    <input type="text" name="Address" placeholder="Address" maxlength="40" pattern="[A-Za-z]{} [0-9]{}" required>
+                    <input type="text" name="FB Link" placeholder="FB Link" maxlength="40" pattern="[A-Za-z]{} [0-9]{}" required>
+                    <input type="submit" id="Save changes" value="Save changes">
+                </form>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <input type="password" name="Old password" placeholder="Old password" maxlength="40" pattern="[A-Za-z]{} [А-Яа-я]{}" required>
+                    <input type="password" name="New password" placeholder="New password" maxlength="40" pattern="[A-Za-z]{} [А-Яа-я]{}" required>
+                    <input type="password" name="Repeat password" placeholder="Repeat password" maxlength="40" pattern="[A-Za-z]{} [А-Яа-я]{}" required>
+                    <input type="submit" id="Change password" value="Change password">
+                </form>
+            </div>
+        </div>
     </div>
-    <div></div>
-    <div></div>
-    
-    </div>
-
 </body></html>
 
-
-<!--
-    <form action="#" method="post" name="CreditCard" autocomplete="on">
-            <label for="cardnum">Card Number</label><br>
-            <input type="text" id="cardnum" name="Card Number" placeholder="1234 5678 9012 3456" maxlength="16" pattern="[0-9]{16}" required><br>
-            <label for="cardname">Name On Card</label><br>
-            <input type="text" id="cardname" name="Name On Card"  placeholder="Name Surname" maxlength="25" pattern="[a-z]{}[а-я]{}" required>
-            <div class="dateSection">
-                <div>
-                    <label for="expd">Expiry Date</label><br>
-                    <input type="text" id="expd" name="Expiry Date"  placeholder="02" maxlength="2" pattern="[0-1]{1}[1-9]{1}" required>
-                </div>
-                <div>
-                   <label for="cyear">Year</label><br>
-                    <input type="text" id="cyear" name="Card Year"  placeholder="2017" maxlength="4" pattern="[2-2]{1}[0-0]{1}[2-3]{1}[1-9]{1}" required>
-                </div>
-                <div>
-                    <label for="cvv">CVV / CVN</label><br>
-                    <input type="password" id="cvv" name="CVV / CVN"  placeholder="***" maxlength="3" id="cvv" pattern="[0-9]{3}" required>
-                </div>
-            </div>
-        </form>-->
